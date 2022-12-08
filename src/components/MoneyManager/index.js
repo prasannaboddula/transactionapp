@@ -206,10 +206,10 @@ class MoneyManager extends Component {
                 <p className="t-heading">Type</p>
                 <p> </p>
               </li>
-              {transactionDetailsList.map(eachTransaction => (
+              {transactionDetailsList.map(eachDetailedTransactiopn => (
                 <TransactionItem
-                  key={eachTransaction.id}
-                  moneyDetailsList={eachTransaction}
+                  key={eachDetailedTransactiopn.id}
+                  transactionDetailsList={eachDetailedTransactiopn}
                   onDeleteTransaction={this.onDeleteTransaction}
                 />
               ))}
